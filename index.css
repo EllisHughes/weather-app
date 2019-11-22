@@ -1,0 +1,169 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+input { 
+    text-align: center; 
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg {
+    background-position: 70%;
+    height: 100vh;
+    width: 100vw;
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) ),
+    url(bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100% !important;
+}
+
+.locationTitle {
+    height: 60px;
+    width: 300px;
+    margin: auto !important;
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.container {
+    height: 30vh;
+    width: 50vw;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-top: -15vh;
+    margin-left: -25vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px hidden rgb(255, 255, 255);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.5fr 0.75fr 0.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.locationTitle { grid-area: 1 / 1 / 1 / 6;}
+.box1 { grid-area: 2 / 1 / 2 / 2; }
+.box2 { grid-area: 2 / 2 / 2 / 3; }
+.box3 { grid-area: 2 / 3 / 2 / 4; }
+.box4 { grid-area: 2 / 4 / 2 / 5; }
+.box5 { grid-area: 2 / 5 / 2 / 6; }
+.temp1 { grid-area: 3 / 1 / 3 / 2; }
+.temp2 { grid-area: 3 / 2 / 3 / 3; }
+.temp3 { grid-area: 3 / 3 / 3 / 4; }
+.temp4 { grid-area: 3 / 4 / 3 / 5; }
+.temp5 { grid-area: 3 / 5 / 3 / 6; }
+
+#day1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#day2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#day3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#day4 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#day5 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.searchBox {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: rgb(42, 42, 42);
+    height: 60px;
+    border-radius: 60px;
+    padding: 10px;
+    
+    align-content: center;
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+    background: rgba(255, 255, 255, 0);
+}
+
+.searchBox:hover > .searchButton {
+  background: rgb(42, 42, 42);
+  color : #ffffff;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(42, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.material-icons {
+    font-size: 40px !important;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.4s;
+    line-height: 60px;
+    width: 0px;
+    text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
